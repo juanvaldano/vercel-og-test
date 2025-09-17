@@ -18,7 +18,7 @@ const jobs: Job[] = [
     location: "New York, NY",
     description:
       "We are looking for a skilled electrician to join our growing team. Must have experience with residential wiring and troubleshooting.",
-    image: "https://placehold.co/600x400?text=Electrician",
+    image: "https://imgur.com/mTSRunG",
   },
   {
     id: "2",
@@ -27,7 +27,7 @@ const jobs: Job[] = [
     location: "Chicago, IL",
     description:
       "Join our plumbing experts. Work on a variety of residential and commercial projects. Experience in pipe fitting required.",
-    image: "https://placehold.co/600x400?text=Plumber",
+    image: "https://imgur.com/mTSRunG",
   },
   {
     id: "3",
@@ -36,7 +36,7 @@ const jobs: Job[] = [
     location: "Houston, TX",
     description:
       "Seeking an experienced welder for structural and fabrication projects. Must know MIG and TIG welding techniques.",
-    image: "https://placehold.co/600x400?text=Welder",
+    image: "https://imgur.com/mTSRunG",
   },
 ];
 
