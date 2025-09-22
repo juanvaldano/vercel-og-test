@@ -23,6 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${baseUrl}/jobs/${job.id}`;
 
+  // ⚡️ TEMPORARY: hardcode a real thumbnail_url from your backend
+  const realImage =
+    "https://stc-nonsens-s3-dev.s3.us-east-1.amazonaws.com/job/18360/shareJobPost.jpg";
+
   return {
     title: `${job.title} at ${job.company}`,
     description: job.description,
@@ -33,9 +37,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       images: [
         {
-          url: job.image,
+          url: realImage, // 👈 use real backend thumbnail_url here
           width: 655,
           height: 343,
+          alt: `${job.title} at ${job.company}`,
         },
       ],
     },
@@ -43,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: `${job.title} at ${job.company}`,
       description: job.description,
-      images: [job.image],
+      images: [realImage],
     },
   };
 }
