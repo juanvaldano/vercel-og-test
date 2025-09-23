@@ -9,6 +9,9 @@ type Props = {
   params: Promise<Params>;
 };
 
+const realImage =
+  "https://stc-nonsens-s3-dev.s3.us-east-1.amazonaws.com/job/18360/shareJobPost.jpg";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const job = await getJob(id);
@@ -23,10 +26,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${baseUrl}/jobs/${job.id}`;
 
-  // ⚡️ TEMPORARY: hardcode a real thumbnail_url from your backend
-  const realImage =
-    "https://stc-nonsens-s3-dev.s3.us-east-1.amazonaws.com/job/18360/shareJobPost.jpg";
-
   return {
     title: `${job.title} at ${job.company}`,
     description: job.description,
@@ -37,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       images: [
         {
-          url: realImage, // 👈 use real backend thumbnail_url here
+          url: realImage,
           width: 655,
           height: 343,
           alt: `${job.title} at ${job.company}`,
@@ -68,7 +67,7 @@ export default async function JobPage({ params }: Props) {
         {job.company} – {job.location}
       </p>
       <p className="mt-4">{job.description}</p>
-      <img src={job.image} alt={job.title} className="mt-6 rounded" />
+      <img src={realImage} alt={job.title} className="mt-6 rounded" />
     </main>
   );
 }

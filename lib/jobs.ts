@@ -6,19 +6,16 @@ export type Job = {
   company: string;
   location: string;
   description: string;
-  image: string;
 };
 
 // Fake job data
 const jobs: Job[] = [
   {
     id: "1",
-    title: "Electrician",
-    company: "Bright Sparks Ltd.",
-    location: "New York, NY",
-    description:
-      "We are looking for a skilled electrician to join our growing team. Must have experience with residential wiring and troubleshooting.",
-    image: "https://i.imgur.com/mTSRunG.jpg",
+    title: "Lineman at Juno - Reno | SkilledTrades.com",
+    company: "Juno",
+    location: "Reno, NV",
+    description: "Test Sharing Feature 02 - Description",
   },
   {
     id: "2",
@@ -27,7 +24,6 @@ const jobs: Job[] = [
     location: "Chicago, IL",
     description:
       "Join our plumbing experts. Work on a variety of residential and commercial projects. Experience in pipe fitting required.",
-    image: "https://i.imgur.com/mTSRunG.jpg",
   },
   {
     id: "3",
@@ -36,7 +32,6 @@ const jobs: Job[] = [
     location: "Houston, TX",
     description:
       "Seeking an experienced welder for structural and fabrication projects. Must know MIG and TIG welding techniques.",
-    image: "https://i.imgur.com/mTSRunG.jpg",
   },
 ];
 
