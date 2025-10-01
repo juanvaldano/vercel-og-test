@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         {
           url: realImage,
-          width: 655,
-          height: 343,
+          width: 1200,
+          height: 630,
           alt: `${job.title} at ${job.company}`,
         },
       ],

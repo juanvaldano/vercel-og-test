@@ -26,7 +26,7 @@ const jobs: Job[] = [
       "Join our plumbing experts. Work on a variety of residential and commercial projects. Experience in pipe fitting required.",
   },
   {
-    id: "3",
+    id: "300",
     title: "Welder",
     company: "SteelWorks Co.",
     location: "Houston, TX",
