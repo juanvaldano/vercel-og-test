@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${baseUrl}/jobs/${job.id}`;
 
   return {
-    title: `${job.title} at ${job.company}`,
+    title: `Guido was here. ${job.title} at ${job.company}`,
     description: job.description,
     openGraph: {
-      title: `${job.title} at ${job.company}`,
+      title: `Guido was also here. ${job.title} at ${job.company}`,
       description: job.description,
       type: "article",
       url,
