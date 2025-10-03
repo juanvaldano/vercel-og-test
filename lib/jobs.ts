@@ -1,5 +1,3 @@
-// lib/jobs.ts
-
 export type Job = {
   id: string;
   title: string;
@@ -8,7 +6,6 @@ export type Job = {
   description: string;
 };
 
-// Fake job data
 const jobs: Job[] = [
   {
     id: "1",
@@ -35,13 +32,12 @@ const jobs: Job[] = [
   },
 ];
 
-// Simulate async DB/API fetch
 export async function getJob(id: string): Promise<Job | null> {
-  await new Promise((resolve) => setTimeout(resolve, 200)); // fake delay
+  await new Promise((resolve) => setTimeout(resolve, 200));
   return jobs.find((job) => job.id === id) ?? null;
 }
 
 export async function getAllJobs(): Promise<Job[]> {
-  await new Promise((resolve) => setTimeout(resolve, 200)); // fake delay
+  await new Promise((resolve) => setTimeout(resolve, 200));
   return jobs;
 }
