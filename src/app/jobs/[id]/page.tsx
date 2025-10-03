@@ -10,7 +10,7 @@ type Props = {
 };
 
 const realImage =
-  "https://stc-nonsens-s3-dev.s3.us-east-1.amazonaws.com/job/18360/shareJobPost.jpg";
+  "https://github.com/user-attachments/assets/9977d5af-298a-4ddb-9545-b98f33511513";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
