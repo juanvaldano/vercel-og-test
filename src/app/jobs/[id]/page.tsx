@@ -10,7 +10,7 @@ type Props = {
 };
 
 const realImage =
-  "https://github-production-user-asset-6210df.s3.amazonaws.com/89733954/497178190-9977d5af-298a-4ddb-9545-b98f33511513.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251003%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251003T144150Z&X-Amz-Expires=300&X-Amz-Signature=d0e1dad82c0a539585d38022bd201a936f8fa3912718b455ae97533a23cfeab5&X-Amz-SignedHeaders=host";
+  "https://stc-nonsens-s3-dev.s3.us-east-1.amazonaws.com/job/18973/shareJobPost.jpg";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
