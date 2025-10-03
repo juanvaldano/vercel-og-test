@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Guido was here. ${job.title} at ${job.company}`,
-    description: job.description,
+    description: `Guido was here I hate linkedin with all my heart. ${job.description}`,
     openGraph: {
       title: `Guido was also here. ${job.title} at ${job.company}`,
       description: job.description,
